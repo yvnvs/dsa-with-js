@@ -1,4 +1,6 @@
-export default class Queue {
+// Array Queue
+
+class Queue {
     constructor(){
         this.items = [];
     }
@@ -33,3 +35,16 @@ export default class Queue {
     }
 
 }
+
+
+const queue = new Queue()
+
+console.log(queue.isEmpty())
+
+
+queue.enqueue(10)
+queue.enqueue(20)
+queue.enqueue(30)
+queue.enqueue(40)
+
+console.log(queue.print());
